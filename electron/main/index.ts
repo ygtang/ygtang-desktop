@@ -1,7 +1,8 @@
-import { app, BrowserWindow, globalShortcut, shell } from "electron";
 import { release } from "node:os";
 import { join } from "node:path";
-import { Menubar, menubar } from "menubar";
+
+import { app, BrowserWindow, globalShortcut, shell } from "electron";
+import { type Menubar, menubar } from "menubar";
 
 // The built directory structure
 //
