@@ -11,6 +11,7 @@
   mac: {
     artifactName: "${productName}_${version}.${ext}",
     target: ["dmg", "zip"],
+    icon: "./public/appIcon.png",
   },
   win: {
     target: [
@@ -20,6 +21,7 @@
       },
     ],
     artifactName: "${productName}_${version}.${ext}",
+    icon: "./public/appIcon.png",
   },
   nsis: {
     oneClick: false,

@@ -41,14 +41,18 @@ const PRODUCTION_URL = "https://app.ygtang.kr";
 let mb: Menubar | null = null;
 
 async function createWindow() {
+  const win = new BrowserWindow({ icon: join(process.env.PUBLIC, "menuIcon.png") });
+  win.hide();
+
   mb = menubar({
     index: PRODUCTION_URL,
+    icon: join(process.env.PUBLIC, "menuIcon.png"),
     browserWindow: {
       title: "영감탱",
       width: 375,
       height: 700,
       resizable: false,
-      icon: join(process.env.PUBLIC, "favicon.ico"),
+      icon: join(process.env.PUBLIC, "menuIcon.png"),
       webPreferences: {
         // Warning: Enable nodeIntegration and disable contextIsolation is not secure in production
         // Consider using contextBridge.exposeInMainWorld
